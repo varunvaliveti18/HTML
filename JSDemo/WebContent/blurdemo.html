@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function validate(elem){
+	document.getElementById("err1").innerHTML=" ";
+	if(isNaN(elem.value)){
+		document.getElementById("err1").innerHTML="Id must be a number";
+		elem.focus();
+	}else{
+		removeFocus(elem);
+	}
+}
+
+function makeFocus(elem){
+	elem.style.backgroundColor='yellow';
+	elem.style.borderColor='red';
+	
+}
+
+function RemoveFocus(elem){
+	elem.style.backgroundColor='white';
+	elem.style.borderColor='black';
+}
+</script>
+</head>
+<body>
+<h1>Blur event</h1>
+<hr/>
+<form>
+	<table cellpadding="10" bgcolor="#e3e3e3">
+		<tr>
+			<td>empid</td>
+			<td><input type="text" id="txtid" onblur="validate(this)" onfocus="makeFocus(this)"/></td>
+			
+		</tr>
+		<tr>
+			<td>name</td>
+			<td><input type="text" id="txtname"  onblur="RemoveFocus(this)" onfocus="makeFocus(this)"/></td>
+			
+		</tr>
+		
+		<tr><td colspan="3" align="center"><input type="submit" /></td></tr>
+	</table>
+	</form>
+</body>
+</html>

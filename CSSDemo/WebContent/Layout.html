@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Layout</title>
+<style>
+header,footer{
+background:-webkit-linear-gradient(left,yellow,blue,green,white,blue,orange);
+background:-moz-linear-gradient(left,yellow,blue,green,white,blue,orange);
+background:-ms-linear-gradient(left,yellow,blue,green,white,blue,orange);
+background: linear-gradient(to left,yellow,blue,green,white,blue,orange);
+text-align: center;
+}
+
+header span{
+font-family=cursive;
+font-size:48px;
+font-variant-small-caps;
+text-shadow: 5px 5px 5px black;
+-webkit-text-shadow: 5px 5px 5px black;
+-moz-text-shadow: 5px 5px 5px black;
+-ms-text-shadow: 5px 5px 5px black;
+color: maroon;
+}
+
+section{
+min.height: 600px;
+display:flex;
+flex-wrap: wrap;
+}
+
+section h2{
+text-align: center;
+}
+article{
+width: 60%;
+text-align: justify;
+padding: 10px;
+}
+ article div{
+ text-indent: 50px;
+ 
+ }
+ 
+aside {
+border: 1px solid red; 
+}
+
+aside div{
+background: -webkit-radial-gradient(red,yellow,green);
+height:100px;
+}
+</style>
+</head>
+<body>
+	<header>
+		<span>Sapient Technologies</span>
+	</header>
+	<section>
+		<article>
+		<h2>Article 1</h2>
+		<div>loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren
+		ipsum Loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum
+		loren ipsum loren ipsum Loren ipsum loren ipsum loren ipsum loren
+		ipsum loren ipsum loren ipsum loren ipsum Loren ipsum loren ipsum
+		loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum Loren
+		ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum
+		loren ipsum Loren ipsum loren ipsum loren ipsum loren ipsum loren
+		ipsum loren ipsum loren ipsum Loren ipsum loren ipsum loren ipsum</div>
+		</article>
+		<aside>
+		<img src="images/computer3.jpg"/>
+		<div id="adv">
+		Great Offer!!!
+		</div>
+		</aside>
+	</section>
+	
+	
+	<footer>
+	copyrights reserved 2018
+	</footer>
+</body>
+</html>
