@@ -44,26 +44,27 @@
 </style>
 </head>
 <body>
+<%@include file = "Header.jsp" %>
 <h1 align ="center">Home Page</h1>
-<div align = "center">
-<%=application.getInitParameter("headstr") %><br/>
-</div>
+
 <hr/>
 <table cellpadding ="10" style = "margin :0 auto">
-<tr>
-<td><a href = "TaxForm.jsp">Tax Calculation</a></td>
-</tr>
+
+
+
 <tr>
 <td><a href = "SkillFrm.jsp">Update Profile</a></td>
 </tr>
 <tr>
-<td><a href = "QuizFrm.jsp">Play Quiz</a></td>
+<td><a href = "QuizFrm.jsp">Play the Quiz</a></td>
 </tr>
+
+
 <tr>
 <td><a href = "EligibleFrm.jsp">Eligible for java Developer</a></td>
 </tr>
 <tr>
-<td><a href = "DownloadMx">Download Mx Form</a></td>
+<td><a href = "HtmlTutorial.jsp">Html Tutorial</a></td>
 </tr>
 </table>
 </body>

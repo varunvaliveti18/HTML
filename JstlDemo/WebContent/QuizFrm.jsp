@@ -7,13 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%@include file = "Header.jsp" %>
 <h1 align="center">Play Java Quiz</h1>
-<div align = "center">
-<%=application.getInitParameter("headstr") %><br/>
-<a href = "<%=application.getInitParameter("homepg")%>">Home</a>
-</div>
+
 <hr/>
-<form action="quiz" method="post">
+<form action="QuizResult.jsp" method="post">
 	<div style="width:40;background-color:aqua;margin:0 auto">
 	1.Size of int type<br/>
 	<input type="radio" name="ques1" value="1">1<br/>
@@ -26,7 +24,7 @@
 	<input type="radio" name="ques2" value="2">2<br/>
 	<input type="radio" name="ques2" value="4">4<br/>
 	<br/>
-	</div>
+	
 	
 	3.Which collection allows duplicates<br/>
 	<input type="radio" name="ques3" value="list">list<br/>
@@ -38,6 +36,7 @@
 	<input type="radio" name="ques4" value="list">list<br/>
 	<input type="radio" name="ques4" value="set">set<br/>
 	<input type="radio" name="ques4" value="array">array<br/>
+	</div>
 	<hr/>
 	<input type="submit" value="finish"/>
 </form>

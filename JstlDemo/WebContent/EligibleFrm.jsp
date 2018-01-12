@@ -6,13 +6,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1 align="center">Are u eligible for Java Fresher</h1>
-<div align = "center">
-<%=application.getInitParameter("headstr") %><br/>
-<a href = "<%=application.getInitParameter("homepg")%>">Home</a>
-</div>
-<hr />
-	<form action="MyEligible">
+<%@include file = "Header.jsp" %>
+<h1 align="center">Eligible Result</h1>
+
+
+	<form action="EligibleResult.jsp">
 		<table cellpadding="10" bgcolor="wheat" style="margin: 0 auto">
 			<tr>
 				<td>Employee Name</td>

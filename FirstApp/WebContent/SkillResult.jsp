@@ -16,7 +16,7 @@
 		</tr>
 		<tr>
 			<td>Team</td>
-			<td><%=request.getParameter("team") %></td>
+			<td><%=request.getParameter("gen") %></td>
 		</tr>
 		<tr>
 			<td>Skills</td>

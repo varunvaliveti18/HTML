@@ -2,7 +2,6 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>FirstApp</display-name>
   <welcome-file-list>
-    
     <welcome-file>Home.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
@@ -13,8 +12,7 @@
     <servlet-name>myTax</servlet-name>
     <url-pattern>/tax</url-pattern>
   </servlet-mapping>
-  
-    <servlet>
+  <servlet>
     <servlet-name>myEligible</servlet-name>
     <servlet-class>com.sapient.web.MyEligible</servlet-class>
   </servlet>
@@ -22,21 +20,30 @@
     <servlet-name>myEligible</servlet-name>
     <url-pattern>/MyEligible</url-pattern>
   </servlet-mapping>
-   <servlet>
+  <servlet>
     <servlet-name>myQuiz</servlet-name>
     <servlet-class>com.sapient.web.QuizServlet</servlet-class>
   </servlet>
-   <servlet-mapping>
+  <servlet-mapping>
     <servlet-name>myQuiz</servlet-name>
     <url-pattern>/quiz</url-pattern>
   </servlet-mapping>
   <context-param>
-  <param-name>headstr</param-name>
-  <param-value>powered by sapient technologies</param-value>
+    <param-name>headstr</param-name>
+    <param-value>powered by sapient technologies</param-value>
   </context-param>
   <context-param>
-  <param-name>homepg</param-name>
-  <param-value>Home.jsp</param-value>
+    <param-name>homepg</param-name>
+    <param-value>Home.jsp</param-value>
   </context-param>
+  <servlet>
+    <description></description>
+    <display-name>DownloadMx</display-name>
+    <servlet-name>DownloadMx</servlet-name>
+    <servlet-class>com.sapient.web.DownloadMx</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DownloadMx</servlet-name>
+    <url-pattern>/DownloadMx</url-pattern>
+  </servlet-mapping>
 </web-app>
-
